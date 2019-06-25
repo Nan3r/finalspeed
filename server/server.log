@@ -1,0 +1,527 @@
+
+FinalSpeed server starting... 
+System Name: linux
+Listen udp port: 150
+Listen tcp port: 150
+Network Interface List: 
+     eth0
+  Pseudo-device that captures on all interfaces   any
+     lo
+  Linux netfilter log (NFLOG) interface   nflog
+  Linux netfilter queue (NFQUEUE) interface   nfqueue
+Selected Network Interface:
+     eth0
+FinalSpeed server start success.
+接收第一次握手 92.53.90.132:-11518->176.122.128.26:150 ident 17853
+[Ethernet Header (14 bytes)]
+  Destination address: aa:aa:00:0d:07:64
+  Source address: 54:1e:56:6d:79:a1
+  Type: 0x0800 (IPv4)
+[IPv4 Header (20 bytes)]
+  Version: 4 (IPv4)
+  IHL: 5 (20 [bytes])
+  TOS: [precedence: 0 (Routine)] [tos: 0 (Default)] [mbz: 0]
+  Total length: 40 [bytes]
+  Identification: 17853
+  Flags: (Reserved, Don't Fragment, More Fragment) = (false, false, false)
+  Fragment offset: 0 (0 [bytes])
+  TTL: 242
+  Protocol: 6 (TCP)
+  Header checksum: 0x9bc4
+  Source address: /92.53.90.132
+  Destination address: /176.122.128.26
+[TCP Header (20 bytes)]
+  Source port: 54018 (unknown)
+  Destination port: 150 (SQL-NET)
+  Sequence Number: 1017562417
+  Acknowledgment Number: 0
+  Data Offset: 5 (20 [bytes])
+  Reserved: 0
+  URG: false
+  ACK: false
+  PSH: false
+  RST: false
+  SYN: true
+  FIN: false
+  Window: 1024
+  Checksum: 0xef23
+  Urgent Pointer: 0
+[Ethernet Pad (6 bytes)]
+  Hex stream: 00 00 00 00 00 00
+
+发送第二次握手 aa:aa:00:0d:07:64->54:1e:56:6d:79:a1 /176.122.128.26-> ident 0
+[Ethernet Header (14 bytes)]
+  Destination address: 54:1e:56:6d:79:a1
+  Source address: aa:aa:00:0d:07:64
+  Type: 0x0800 (IPv4)
+[IPv4 Header (20 bytes)]
+  Version: 4 (IPv4)
+  IHL: 5 (20 [bytes])
+  TOS: [precedence: 0 (Routine)] [tos: 0 (Default)] [mbz: 0]
+  Total length: 52 [bytes]
+  Identification: 0
+  Flags: (Reserved, Don't Fragment, More Fragment) = (false, true, false)
+  Fragment offset: 0 (0 [bytes])
+  TTL: 64
+  Protocol: 6 (TCP)
+  Header checksum: 0x5376
+  Source address: /176.122.128.26
+  Destination address: /92.53.90.132
+[TCP Header (32 bytes)]
+  Source port: 150 ()
+  Destination port: 54018 ()
+  Sequence Number: 1002802674
+  Acknowledgment Number: 1017562418
+  Data Offset: 8 (32 [bytes])
+  Reserved: 0
+  URG: false
+  ACK: true
+  PSH: false
+  RST: false
+  SYN: true
+  FIN: false
+  Window: 65535
+  Checksum: 0xe89e
+  Urgent Pointer: 0
+  Option: [Kind: 2 (Maximum Segment Size)] [Length: 4 bytes] [Maximum Segment Size: 1440 bytes]
+  Option: [Kind: 1 (No Operation)]
+  Option: [Kind: 1 (No Operation)]
+  Option: [Kind: 4 (SACK Permitted)] [Length: 2 bytes]
+  Option: [Kind: 1 (No Operation)]
+  Option: [Kind: 3 (Window Scale)] [Length: 3 bytes] [Shift Count: 6]
+
+接收第一次握手 183.31.245.148:16998->176.122.128.26:150 ident -4950
+[Ethernet Header (14 bytes)]
+  Destination address: aa:aa:00:0d:07:64
+  Source address: 54:1e:56:6d:79:a1
+  Type: 0x0800 (IPv4)
+[IPv4 Header (20 bytes)]
+  Version: 4 (IPv4)
+  IHL: 5 (20 [bytes])
+  TOS: [precedence: 0 (Routine)] [tos: 0 (Default)] [mbz: 0]
+  Total length: 52 [bytes]
+  Identification: 60586
+  Flags: (Reserved, Don't Fragment, More Fragment) = (false, true, false)
+  Fragment offset: 0 (0 [bytes])
+  TTL: 52
+  Protocol: 6 (TCP)
+  Header checksum: 0x7cd0
+  Source address: /183.31.245.148
+  Destination address: /176.122.128.26
+[TCP Header (32 bytes)]
+  Source port: 16998 (unknown)
+  Destination port: 150 (SQL-NET)
+  Sequence Number: 3504680215
+  Acknowledgment Number: 0
+  Data Offset: 8 (32 [bytes])
+  Reserved: 0
+  URG: false
+  ACK: false
+  PSH: false
+  RST: false
+  SYN: true
+  FIN: false
+  Window: 64240
+  Checksum: 0x560d
+  Urgent Pointer: 0
+  Option: [Kind: 2 (Maximum Segment Size)] [Length: 4 bytes] [Maximum Segment Size: 1412 bytes]
+  Option: [Kind: 1 (No Operation)]
+  Option: [Kind: 3 (Window Scale)] [Length: 3 bytes] [Shift Count: 8]
+  Option: [Kind: 1 (No Operation)]
+  Option: [Kind: 1 (No Operation)]
+  Option: [Kind: 4 (SACK Permitted)] [Length: 2 bytes]
+
+发送第二次握手 aa:aa:00:0d:07:64->54:1e:56:6d:79:a1 /176.122.128.26-> ident 0
+[Ethernet Header (14 bytes)]
+  Destination address: 54:1e:56:6d:79:a1
+  Source address: aa:aa:00:0d:07:64
+  Type: 0x0800 (IPv4)
+[IPv4 Header (20 bytes)]
+  Version: 4 (IPv4)
+  IHL: 5 (20 [bytes])
+  TOS: [precedence: 0 (Routine)] [tos: 0 (Default)] [mbz: 0]
+  Total length: 52 [bytes]
+  Identification: 0
+  Flags: (Reserved, Don't Fragment, More Fragment) = (false, true, false)
+  Fragment offset: 0 (0 [bytes])
+  TTL: 64
+  Protocol: 6 (TCP)
+  Header checksum: 0x5d7b
+  Source address: /176.122.128.26
+  Destination address: /183.31.245.148
+[TCP Header (32 bytes)]
+  Source port: 150 ()
+  Destination port: 16998 ()
+  Sequence Number: 505008786
+  Acknowledgment Number: 3504680216
+  Data Offset: 8 (32 [bytes])
+  Reserved: 0
+  URG: false
+  ACK: true
+  PSH: false
+  RST: false
+  SYN: true
+  FIN: false
+  Window: 65535
+  Checksum: 0x6027
+  Urgent Pointer: 0
+  Option: [Kind: 2 (Maximum Segment Size)] [Length: 4 bytes] [Maximum Segment Size: 1440 bytes]
+  Option: [Kind: 1 (No Operation)]
+  Option: [Kind: 1 (No Operation)]
+  Option: [Kind: 4 (SACK Permitted)] [Length: 2 bytes]
+  Option: [Kind: 1 (No Operation)]
+  Option: [Kind: 3 (Window Scale)] [Length: 3 bytes] [Shift Count: 6]
+
+接收第三次握手  ident -4949
+[Ethernet Header (14 bytes)]
+  Destination address: aa:aa:00:0d:07:64
+  Source address: 54:1e:56:6d:79:a1
+  Type: 0x0800 (IPv4)
+[IPv4 Header (20 bytes)]
+  Version: 4 (IPv4)
+  IHL: 5 (20 [bytes])
+  TOS: [precedence: 0 (Routine)] [tos: 0 (Default)] [mbz: 0]
+  Total length: 40 [bytes]
+  Identification: 60587
+  Flags: (Reserved, Don't Fragment, More Fragment) = (false, true, false)
+  Fragment offset: 0 (0 [bytes])
+  TTL: 52
+  Protocol: 6 (TCP)
+  Header checksum: 0x7cdb
+  Source address: /183.31.245.148
+  Destination address: /176.122.128.26
+[TCP Header (20 bytes)]
+  Source port: 16998 (unknown)
+  Destination port: 150 (SQL-NET)
+  Sequence Number: 3504680216
+  Acknowledgment Number: 505008787
+  Data Offset: 5 (20 [bytes])
+  Reserved: 0
+  URG: false
+  ACK: true
+  PSH: false
+  RST: false
+  SYN: false
+  FIN: false
+  Window: 512
+  Checksum: 0x9ee4
+  Urgent Pointer: 0
+[Ethernet Pad (6 bytes)]
+  Hex stream: 00 00 00 00 00 00
+
+接收第一次握手 185.176.26.18:-11382->176.122.128.26:150 ident -526
+[Ethernet Header (14 bytes)]
+  Destination address: aa:aa:00:0d:07:64
+  Source address: 54:1e:56:6d:79:a1
+  Type: 0x0800 (IPv4)
+[IPv4 Header (20 bytes)]
+  Version: 4 (IPv4)
+  IHL: 5 (20 [bytes])
+  TOS: [precedence: 0 (Routine)] [tos: 0 (Default)] [mbz: 0]
+  Total length: 40 [bytes]
+  Identification: 65010
+  Flags: (Reserved, Don't Fragment, More Fragment) = (false, false, false)
+  Fragment offset: 0 (0 [bytes])
+  TTL: 245
+  Protocol: 6 (TCP)
+  Header checksum: 0xc385
+  Source address: /185.176.26.18
+  Destination address: /176.122.128.26
+[TCP Header (20 bytes)]
+  Source port: 54154 (unknown)
+  Destination port: 150 (SQL-NET)
+  Sequence Number: 1962507646
+  Acknowledgment Number: 0
+  Data Offset: 5 (20 [bytes])
+  Reserved: 0
+  URG: false
+  ACK: false
+  PSH: false
+  RST: false
+  SYN: true
+  FIN: false
+  Window: 1024
+  Checksum: 0xe0f2
+  Urgent Pointer: 0
+[Ethernet Pad (6 bytes)]
+  Hex stream: 00 00 00 00 00 00
+
+发送第二次握手 aa:aa:00:0d:07:64->54:1e:56:6d:79:a1 /176.122.128.26-> ident 0
+[Ethernet Header (14 bytes)]
+  Destination address: 54:1e:56:6d:79:a1
+  Source address: aa:aa:00:0d:07:64
+  Type: 0x0800 (IPv4)
+[IPv4 Header (20 bytes)]
+  Version: 4 (IPv4)
+  IHL: 5 (20 [bytes])
+  TOS: [precedence: 0 (Routine)] [tos: 0 (Default)] [mbz: 0]
+  Total length: 52 [bytes]
+  Identification: 0
+  Flags: (Reserved, Don't Fragment, More Fragment) = (false, true, false)
+  Fragment offset: 0 (0 [bytes])
+  TTL: 64
+  Protocol: 6 (TCP)
+  Header checksum: 0x366d
+  Source address: /176.122.128.26
+  Destination address: /185.176.26.18
+[TCP Header (32 bytes)]
+  Source port: 150 ()
+  Destination port: 54154 ()
+  Sequence Number: 1077030615
+  Acknowledgment Number: 1962507647
+  Data Offset: 8 (32 [bytes])
+  Reserved: 0
+  URG: false
+  ACK: true
+  PSH: false
+  RST: false
+  SYN: true
+  FIN: false
+  Window: 65535
+  Checksum: 0x351c
+  Urgent Pointer: 0
+  Option: [Kind: 2 (Maximum Segment Size)] [Length: 4 bytes] [Maximum Segment Size: 1440 bytes]
+  Option: [Kind: 1 (No Operation)]
+  Option: [Kind: 1 (No Operation)]
+  Option: [Kind: 4 (SACK Permitted)] [Length: 2 bytes]
+  Option: [Kind: 1 (No Operation)]
+  Option: [Kind: 3 (Window Scale)] [Length: 3 bytes] [Shift Count: 6]
+
+超时关闭client 183.31.245.176:16698 Tue Jun 25 08:38:34 EDT 2019
+端口22777无返回数据
+端口22777无返回数据
+超时关闭client 183.31.245.176:16822 Tue Jun 25 08:43:06 EDT 2019
+端口22777无返回数据
+端口22777无返回数据
+超时关闭client 183.31.245.176:16205 Tue Jun 25 09:15:32 EDT 2019
+delay_udp 171ms 183.31.245.176:16234
+delay_udp 170ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+端口22777无返回数据
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+端口22777无返回数据
+端口22777无返回数据
+delay_udp 172ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 169ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+端口22777无返回数据
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+端口22777无返回数据
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+端口22777无返回数据
+端口22777无返回数据
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 170ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+端口22777无返回数据
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 175ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+端口22777无返回数据
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+端口22777无返回数据
+delay_udp 170ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+端口22777无返回数据
+端口22777无返回数据
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 170ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 167ms 183.31.245.176:16234
+delay_udp 169ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 170ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
+delay_udp 168ms 183.31.245.176:16234
